@@ -2,7 +2,7 @@
   <div>
   <b-card
     header="Sponsered"
-    header-text-variant="white"
+    header-text-variant="grey"
     header-tag="header"
     title="Ad Modal"
     style="max-width: 20rem;"

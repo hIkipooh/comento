@@ -1,28 +1,27 @@
 <template>
   <div id="app">
     <div id="filter-sort">
-      <filter id="filter" />
-      <sort id="sort" />
+      <filter-btn id="filter" />
+      <sort-btn id="sort" />
     </div>
     <post-modal id="post-modal" />
     <ad-modal id="ad-modal" />
-
   </div>
 </template>
 
 <script>
 import AdModal from "./components/AdModal.vue";
-import Filter from "./components/Filter.vue";
+import FilterBtn from "./components/FilterBtn.vue";
 import PostModal from "./components/PostModal.vue";
-import Sort from "./components/Sort.vue";
+import SortBtn from "./components/SortBtn.vue";
 
 export default {
   name: "app",
   components: {
     AdModal,
-    Filter,
+    FilterBtn,
     PostModal,
-    Sort
+    SortBtn
   }
 };
 </script>
