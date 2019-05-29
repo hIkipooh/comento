@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="filter-sort">
-      <filter />
-      <sort />
+      <filter id="filter" />
+      <sort id="sort" />
     </div>
     <post-modal id="post-modal" />
     <ad-modal id="ad-modal" />
