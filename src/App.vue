@@ -1,10 +1,11 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <filter />
-    <sort />
-    <post-modal />
-    <ad-modal />
+    <div id="filter-sort">
+      <filter />
+      <sort />
+    </div>
+    <post-modal id="post-modal" />
+    <ad-modal id="ad-modal" />
 
   </div>
 </template>
@@ -30,11 +31,24 @@ export default {
 
 <style>
 #app {
+  display: flex;
+  flex-direction: column;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+#filter-sort {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+}
+#post-modal {
+  flex: 3;
+}
+#ad-modal {
+  flex: 3;
 }
 </style>
