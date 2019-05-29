@@ -14,6 +14,7 @@ import AdModal from "./components/AdModal.vue";
 import FilterBtn from "./components/FilterBtn.vue";
 import PostModal from "./components/PostModal.vue";
 import SortBtn from "./components/SortBtn.vue";
+import axios from "axios";
 
 export default {
   name: "app",
@@ -22,12 +23,26 @@ export default {
     FilterBtn,
     PostModal,
     SortBtn
+  },
+  data() {
+    return {
+      posts: [],
+      ads: []
+    };
+  },
+  methods: {
+    getInitialUsers() {
+      for (let i = 0; i < 10; i++) {
+        axios.get();
+      }
+    }
   }
 };
 </script>
 
 <style>
 #app {
+  align-items: center;
   display: flex;
   flex-direction: column;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
