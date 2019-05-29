@@ -1,7 +1,11 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <filter />
+    <sort />
+    <post-modal />
+    <ad-modal />
+
   </div>
 </template>
 
@@ -10,6 +14,8 @@ import AdModal from "./components/AdModal.vue";
 import Filter from "./components/Filter.vue";
 import PostModal from "./components/PostModal.vue";
 import Sort from "./components/Sort.vue";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap-vue/dist/bootstrap-vue.css";
 
 export default {
   name: "app",
