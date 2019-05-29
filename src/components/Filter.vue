@@ -84,6 +84,8 @@
 </template>
 
 <script>
+import { ModalPlugin } from "bootstrap-vue/es/components";
+
 export default {
   data() {
     return {
