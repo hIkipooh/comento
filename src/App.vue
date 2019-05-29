@@ -15,8 +15,6 @@ import AdModal from "./components/AdModal.vue";
 import Filter from "./components/Filter.vue";
 import PostModal from "./components/PostModal.vue";
 import Sort from "./components/Sort.vue";
-import "bootstrap/dist/css/bootstrap.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
 
 export default {
   name: "app",
@@ -43,6 +41,12 @@ export default {
 #filter-sort {
   display: flex;
   flex-direction: row;
+  flex: 1;
+}
+#filter {
+  flex: 1;
+}
+#sort {
   flex: 1;
 }
 #post-modal {
